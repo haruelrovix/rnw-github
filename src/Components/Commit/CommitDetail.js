@@ -8,11 +8,11 @@ import {
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
-import styles from './Shared.style';
-import withBackHandler from '../HOCs/withBackHandler';
-import withLoader from '../HOCs/withLoader';
-import api from '../Utils/api';
-import { withRouter } from '../Utils/Routing';
+import styles from '../Shared.style';
+import withBackHandler from '../../HOCs/withBackHandler';
+import withLoader from '../../HOCs/withLoader';
+import api from '../../Utils/api';
+import { withRouter } from '../../Utils/Routing';
 
 class CommitDetail extends PureComponent {
   keyExtractor = ( item ) => item.filename;

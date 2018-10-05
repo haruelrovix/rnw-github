@@ -3,7 +3,6 @@ import React, { PureComponent } from 'react';
 import {
   ActivityIndicator,
   FlatList,
-  Platform,
   Text,
   View
 } from 'react-native';
@@ -12,11 +11,12 @@ import VisibilitySensor from 'react-visibility-sensor';
 import { compose } from 'redux';
 
 import CommitItem from './CommitItem';
-import styles from './Shared.style';
-import api from '../Utils/api';
-import withBackHandler from '../HOCs/withBackHandler';
-import withLoader from '../HOCs/withLoader';
-import { withRouter } from '../Utils/Routing';
+import styles from '../Shared.style';
+import api from '../../Utils/api';
+import withBackHandler from '../../HOCs/withBackHandler';
+import withLoader from '../../HOCs/withLoader';
+import { isWeb } from '../../Utils/Platform';
+import { withRouter } from '../../Utils/Routing';
 
 const getNextPage = response => {
   if (response && response.headers) {
@@ -76,11 +76,13 @@ class Commits extends PureComponent {
   };
 
   renderActivityIndicator = () => (
-    this.state.nextPage ? <ActivityIndicator size="small" /> : <View />
+    <View style={styles.footer}>
+      {this.state.nextPage ? <ActivityIndicator size="small" /> : null}
+    </View>
   );
 
   renderFooter = () => (
-    this.state.isLoadingMore ? <View /> : this.renderVisibilitySensor()
+    this.state.isLoadingMore ? this.renderActivityIndicator() : this.renderVisibilitySensor()
   );
 
   renderItem = ({ item }) => (
@@ -93,11 +95,11 @@ class Commits extends PureComponent {
   );
 
   renderVisibilitySensor = () => (
-    Platform.OS === 'web' ?
+    isWeb() ?
       <VisibilitySensor onChange={this.onVisibilityChange}>
         {this.renderActivityIndicator()}
-      </VisibilitySensor>:
-      <View />
+      </VisibilitySensor> :
+      <View style={styles.footer} />
   );
 
   render() {
@@ -109,8 +111,10 @@ class Commits extends PureComponent {
             <FlatList
               data={this.state.data}
               keyExtractor={this.keyExtractor}
-              renderItem={this.renderItem}
               ListFooterComponent={this.renderFooter}
+              onEndReached={this.loadMore}
+              onEndReachedThreshold={0.5}
+              renderItem={this.renderItem}
             />
           </View>
         </View>

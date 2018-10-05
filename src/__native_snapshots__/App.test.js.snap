@@ -1,5 +1,247 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App example snapshot test on - ios 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+      "margin": 3,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "90%",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#86939e",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      Owner
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "#86939e",
+          "flexDirection": "row",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Github's owner"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "black",
+              "flex": 1,
+              "fontSize": 18,
+              "height": 40,
+              "marginLeft": 10,
+            },
+            Object {
+              "height": 46,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="haruelrovix"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "90%",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#86939e",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      Repo
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "#86939e",
+          "flexDirection": "row",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Github's repository name"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "black",
+              "flex": 1,
+              "fontSize": 18,
+              "height": 40,
+              "marginLeft": 10,
+            },
+            Object {
+              "height": 46,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="apollo-gql-helferjs"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginTop": 10,
+        },
+        false,
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2089dc",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            Object {
+              "width": 200,
+            },
+            false,
+            false,
+            false,
+            undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+              undefined,
+              false,
+              false,
+            ]
+          }
+        >
+          SUBMIT
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 15,
+              },
+              undefined,
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`App example snapshot test on - web 1`] = `
 <div
   style={

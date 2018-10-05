@@ -8,51 +8,236 @@ exports[`App example snapshot test on - ios 1`] = `
       "backgroundColor": "#fff",
       "flex": 1,
       "justifyContent": "center",
+      "margin": 3,
     }
   }
 >
-  <Image
-    source="logo.png"
+  <View
     style={
-      Object {
-        "height": 300,
-        "width": 300,
-      }
-    }
-  />
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 16,
-        "fontWeight": "bold",
-      }
+      Array [
+        Object {
+          "width": "90%",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
     }
   >
-    Create React Native Web App
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#86939e",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      Owner
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "#86939e",
+          "flexDirection": "row",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Github's owner"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "black",
+              "flex": 1,
+              "fontSize": 18,
+              "height": 40,
+              "marginLeft": 10,
+            },
+            Object {
+              "height": 46,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="haruelrovix"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "90%",
+        },
+        Object {
+          "marginBottom": 10,
+        },
+      ]
+    }
   >
-    Open up src/App.js to start working on your app!
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#86939e",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      Repo
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "#86939e",
+          "flexDirection": "row",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Github's repository name"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "color": "black",
+              "flex": 1,
+              "fontSize": 18,
+              "height": 40,
+              "marginLeft": 10,
+            },
+            Object {
+              "height": 46,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="apollo-gql-helferjs"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginTop": 10,
+        },
+        false,
+      ]
+    }
   >
-    Changes you make will automatically reload.
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
-    Shake your phone to open the developer menu.
-  </Text>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2089dc",
+              "borderRadius": 3,
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+            Object {
+              "width": 200,
+            },
+            false,
+            false,
+            false,
+            undefined,
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+              undefined,
+              false,
+              false,
+            ]
+          }
+        >
+          SUBMIT
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 15,
+              },
+              undefined,
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
 </View>
 `;

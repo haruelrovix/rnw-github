@@ -1,4 +1,4 @@
-import { CHANGE_GITHUB_REPO } from './constants';
+import { CHANGE_GITHUB_REPO } from '../constants';
 
 export const changeGitHubRepo = (github) => {
   return {

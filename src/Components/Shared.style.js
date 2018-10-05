@@ -7,6 +7,13 @@ export default {
       marginTop: 10
     }
   },
+  footer: {
+    borderColor: '#eaecef',
+    borderStyle: 'solid',
+    borderTopWidth: 1,
+    marginRight: 3,
+    paddingTop: 5
+  },
   input: {
     containerStyle: {
       marginBottom: 10

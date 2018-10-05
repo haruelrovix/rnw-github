@@ -6,9 +6,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
+import Button from './Button/Button';
 import styles from './Shared.style';
-import Button from './Button';
-import { changeGitHubRepo } from '../actions';
+import { changeGitHubRepo } from '../Redux/actions';
 import { withRouter } from '../Utils/Routing';
 
 class Home extends PureComponent {

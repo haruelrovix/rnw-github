@@ -20,7 +20,7 @@ class CommitItem extends PureComponent {
         <View style={styles.wrapper}>
           <Image
             style={styles.avatar}
-            source={{ uri: author ? author.avatar_url : '' }}
+            source={{ uri: author ? author.avatar_url : null }}
           />
           <Text style={styles.author}>{author ? author.login : ''}</Text>
         </View>

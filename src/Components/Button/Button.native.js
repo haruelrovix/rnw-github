@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button as RNEButton } from 'react-native-elements';
 
-import styles from './Shared.style';
+import styles from '../Shared.style';
 
 const Button = (props) => {
   const { button } = styles;

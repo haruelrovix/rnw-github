@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 
-import CommitDetail from './Components/CommitDetail';
-import Commits from './Components/Commits';
+import CommitDetail from './Components/Commit/CommitDetail';
+import Commits from './Components/Commit/Commits';
 import Home from './Components/Home';
-import configureStore from './configureStore';
+import configureStore from './Redux/configureStore';
 import { Route, Router, Switch } from './Utils/Routing';
 
 const store = configureStore();
