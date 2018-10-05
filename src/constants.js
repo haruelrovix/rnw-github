@@ -1,0 +1,5 @@
+const CHANGE_GITHUB_REPO = 'CHANGE_GITHUB_REPO';
+
+export {
+  CHANGE_GITHUB_REPO
+};

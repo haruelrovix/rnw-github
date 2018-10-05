@@ -141,7 +141,12 @@ module.exports = {
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
-            include: paths.appSrc,
+            include: [
+              paths.appSrc,
+              path.join(paths.appNodeModules, 'react-native-elements'),
+              path.join(paths.appNodeModules, 'react-native-touchable-scale'),
+              path.join(paths.appNodeModules, 'react-native-vector-icons')
+            ],
             loader: require.resolve('babel-loader'),
             options: {
 
@@ -154,6 +159,12 @@ module.exports = {
               // directory for faster rebuilds.
               cacheDirectory: true,
             },
+          },
+          // https://github.com/oblador/react-native-vector-icons#web-with-webpack
+          {
+            test: /\.ttf$/,
+            loader: 'url-loader', // or directly file-loader
+            include: path.join(paths.appNodeModules, 'react-native-vector-icons'),
           },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.

@@ -26,6 +26,10 @@ const printHostingInstructions = require('react-dev-utils/printHostingInstructio
 const FileSizeReporter = require('react-dev-utils/FileSizeReporter');
 const printBuildError = require('react-dev-utils/printBuildError');
 
+// Let's monkey patch for now, to make RNVI works with RNW
+const babelrc = { presets: ['react-native'] };
+fs.writeFile('node_modules/react-native-vector-icons/.babelrc', JSON.stringify(babelrc) , 'utf-8');
+
 const measureFileSizesBeforeBuild =
   FileSizeReporter.measureFileSizesBeforeBuild;
 const printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;

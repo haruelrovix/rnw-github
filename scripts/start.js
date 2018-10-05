@@ -31,6 +31,10 @@ const paths = require('../config/paths');
 const config = require('../config/webpack.config.dev');
 const createDevServerConfig = require('../config/webpackDevServer.config');
 
+// Let's monkey patch for now, to make RNVI works with RNW
+const babelrc = { presets: ['react-native'] };
+fs.writeFile('node_modules/react-native-vector-icons/.babelrc', JSON.stringify(babelrc) , 'utf-8');
+
 const useYarn = fs.existsSync(paths.yarnLockFile);
 const isInteractive = process.stdout.isTTY;
 
