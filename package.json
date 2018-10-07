@@ -19,6 +19,9 @@
   },
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.46",
+    "appcenter": "^1.8.1",
+    "appcenter-analytics": "^1.8.1",
+    "appcenter-crashes": "^1.8.1",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
