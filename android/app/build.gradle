@@ -110,10 +110,10 @@ android {
     signingConfigs {
         release {
             if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
-                storeFile file(MYAPP_RELEASE_STORE_FILE)
-                storePassword MYAPP_RELEASE_STORE_PASSWORD
-                keyAlias MYAPP_RELEASE_KEY_ALIAS
-                keyPassword MYAPP_RELEASE_KEY_PASSWORD
+                storeFile rootProject.file("app/" + project.findProperty('MYAPP_RELEASE_STORE_FILE') ?: "ANDROID_STORE_FILE_NOT_SET")
+                storePassword project.findProperty('MYAPP_RELEASE_STORE_PASSWORD') ?: "ANDROID_STORE_PASSWORD_NOT_SET"
+                keyAlias project.findProperty('MYAPP_RELEASE_KEY_ALIAS') ?: "ANDROID_KEY_ALIAS_NOT_SET"
+                keyPassword project.findProperty('MYAPP_RELEASE_KEY_PASSWORD') ?: "ANDROID_KEY_PASSWORD_NOT_SET"
             }
         }
     }
@@ -129,7 +129,15 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
+
+            if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
+                signingConfig signingConfigs.release
+            } else {
+                println '-------------------------------------------------'
+                println 'The MYAPP_RELEASE_STORE_FILE property was not set!'
+                println 'This release will not be signed by gradle!'
+                println '-------------------------------------------------'
+            }
         }
     }
     // applicationVariants are e.g. debug, release
