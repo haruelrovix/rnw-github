@@ -11,6 +11,9 @@
 # Some log, please
 echo "Write [react-native] to .babelrc file"
 
+# Permission Denied when writing a File
+chown -R $USER:$USER ./node_modules/react-native-vector-icons
+
 # Remove existing file first
 rm -f ./node_modules/react-native-vector-icons/.babelrc
 
