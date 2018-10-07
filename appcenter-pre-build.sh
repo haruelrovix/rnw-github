@@ -11,9 +11,9 @@
 echo "Write [react-native] to .babelrc file"
 
 # Remove existing file first
-rm -f ../node_modules/react-native-vector-icons/.babelrc
+rm -f ./node_modules/react-native-vector-icons/.babelrc
 
 # Write~
-echo "{ \"presets\": [\"react-native\"] }" >> ../node_modules/react-native-vector-icons/.babelrc
+echo "{ \"presets\": [\"react-native\"] }" >> ./node_modules/react-native-vector-icons/.babelrc
 
 echo "Done! .babelrc should be updated 😁"

@@ -8,6 +8,7 @@
     "build": "node scripts/build.js",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "postinstall" : "./appcenter-pre-build.sh",
     "start-clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm start -- --reset-cache",
     "test": "npm run test:web && npm run test:native",
     "test:web-watch": "node scripts/test.js --env=jsdom --watchAll  --config \"./config/jest/web.jest.config.js\"",
