@@ -138,6 +138,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(':appcenter')
+    implementation project(':appcenter-analytics')
+    implementation project(':appcenter-crashes')
     implementation project(':react-native-vector-icons')
     implementation "com.android.support:appcompat-v7:23.0.1"
     implementation "com.facebook.react:react-native:+"  // From node_modules
