@@ -8,6 +8,7 @@
 # The file located at 'node_modules/react-native-vector-icons/.babelrc'.
 # Let's monkey patching it for now, until I can find more elegant solution.
 
+# Some log, please
 echo "Write [react-native] to .babelrc file"
 
 # Remove existing file first
@@ -16,4 +17,5 @@ rm -f ./node_modules/react-native-vector-icons/.babelrc
 # Write~
 echo "{ \"presets\": [\"react-native\"] }" >> ./node_modules/react-native-vector-icons/.babelrc
 
+# Job Done
 echo "Done! .babelrc should be updated 😁"
