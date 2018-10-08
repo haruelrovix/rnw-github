@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">React Native Web GitHub</string>
+    <string name="app_name">RNW GitHub</string>
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true">ALWAYS_SEND</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true">ALWAYS_SEND</string>
 </resources>
