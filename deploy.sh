@@ -4,7 +4,7 @@
 yarn build
 
 # Where branch am I?
-CURRENT_BRANCH="$(git branch | grep '*' | cut -d ' ' -f2)"
+CURRENT_BRANCH="$(git branch | grep '\*' | cut -d ' ' -f2)"
 
 # Default domain
 DOMAIN="rnw-github-${CURRENT_BRANCH}.surge.sh"
