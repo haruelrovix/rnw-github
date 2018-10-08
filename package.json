@@ -6,7 +6,7 @@
     "start": "react-native start",
     "web": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "deploy": "./deploy.sh",
+    "deploy": "bash ./deploy.sh",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "postinstall": "cp .babelrc node_modules/react-native-vector-icons/.babelrc",
