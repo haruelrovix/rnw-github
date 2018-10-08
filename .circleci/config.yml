@@ -36,8 +36,11 @@ jobs:
       # run tests!
       - run: yarn test
 
-deployment:
-  production:
-    branch: continuous-deployment-at-circleci
-    commands:
-      - surge --project ./build --domain rnw-github.surge.sh
+      # deploying artifacts
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              surge --project ./build --domain rnw-github.surge.sh
+            else
+              surge --project ./build --domain rnw-github-{{ ${CIRCLE_BRANCH} }}.surge.sh
+            fi
