@@ -22,19 +22,17 @@ export default {
       height: 46
     }
   },
-  commits: {
-    flex: 9,
-    marginHorizontal: 3
-  },
   container: {
     alignItems: 'center',
     backgroundColor: '#fff',
+    display: 'flex',
     flex: 1,
-    justifyContent: 'center',
-    margin: 3
+    height: '100%',
+    justifyContent: 'center'
   },
   content: {
-    flex: 1
+    flex: 1,
+    width: '100%'
   },
   title: {
     color: '#24292e',

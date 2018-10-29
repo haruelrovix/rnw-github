@@ -1,5 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  display: flex;
   font-family: sans-serif;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 800px;
 }

@@ -3,7 +3,6 @@ import React, { PureComponent } from 'react';
 import {
   ActivityIndicator,
   FlatList,
-  Text,
   View
 } from 'react-native';
 import { connect } from 'react-redux';
@@ -14,6 +13,7 @@ import CommitItem from './CommitItem';
 import styles from '../Shared.style';
 import api from '../../Utils/api';
 import withBackHandler from '../../HOCs/withBackHandler';
+import withHeader from '../../HOCs/withHeader';
 import withLoader from '../../HOCs/withLoader';
 import { isWeb } from '../../Utils/Platform';
 import { withRouter } from '../../Utils/Routing';
@@ -104,20 +104,15 @@ class Commits extends PureComponent {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.content}>
-          <Text style={styles.title}>Commits</Text>
-          <View style={styles.commits}>
-            <FlatList
-              data={this.state.data}
-              keyExtractor={this.keyExtractor}
-              ListFooterComponent={this.renderFooter}
-              onEndReached={this.loadMore}
-              onEndReachedThreshold={0.5}
-              renderItem={this.renderItem}
-            />
-          </View>
-        </View>
+      <View style={styles.content}>
+        <FlatList
+          data={this.state.data}
+          keyExtractor={this.keyExtractor}
+          ListFooterComponent={this.renderFooter}
+          onEndReached={this.loadMore}
+          onEndReachedThreshold={0.5}
+          renderItem={this.renderItem}
+        />
       </View>
     );
   }
@@ -130,5 +125,6 @@ export default compose(
   withRouter,
   withFetch(({ github }) => api(github).URI),
   withLoader,
-  withBackHandler
+  withBackHandler,
+  withHeader({ title: 'Commits', renderRight: false })
 )(Commits);
