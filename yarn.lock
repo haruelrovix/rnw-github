@@ -8492,10 +8492,10 @@ react-is@^16.3.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
   integrity sha512-xpb0PpALlFWNw/q13A+1aHeyJyLYCg0/cCHPUA43zYluZuIPHaHL3k8OBsTgQtxqW0FhyDEMvi8fZ/+7+r4OSQ==
 
-react-native-elements@1.0.0-beta6:
-  version "1.0.0-beta6"
-  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-1.0.0-beta6.tgz#d551ea1d862f30d6033a12718c12bac12d80156f"
-  integrity sha512-tkL+zGZa8tDMrz+btHbC4nIo9MXZAlqB3PlH17eAicnq+tsUEuRRGn1lHnTbkupm+7XxLfZiiHV09j4GWQJ74Q==
+react-native-elements@1.0.0-beta7:
+  version "1.0.0-beta7"
+  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-1.0.0-beta7.tgz#d732affc905079033a8b53343587f7c1dbc59834"
+  integrity sha512-w89YVfF7own1V3RgHDj6EAofk3mYdL9Z28OolxphFce2mv2k/peFEII7x0S6LyQ7rcT3QaxWDlyP7AS4d8duGg==
   dependencies:
     lodash.merge "^4.6.1"
     lodash.times "^4.3.2"
