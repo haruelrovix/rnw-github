@@ -9,7 +9,7 @@
     "deploy": "bash ./deploy.sh",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "postinstall": "cp .babelrc node_modules/react-native-vector-icons/.babelrc",
+    "postinstall": "node scripts/patch.js",
     "start-clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm start -- --reset-cache",
     "test": "npm run test:web && npm run test:native",
     "test:web-watch": "node scripts/test.js --env=jsdom --watchAll  --config \"./config/jest/web.jest.config.js\"",
