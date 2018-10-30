@@ -18,7 +18,7 @@ jobs:
   build-job:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:10-stretch-browsers-legacy
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -49,7 +49,7 @@ jobs:
 
   deploy-job:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:10-stretch-browsers-legacy
 
     working_directory: ~/repo
 
