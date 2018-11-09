@@ -710,24 +710,24 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-appcenter-analytics@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.8.1.tgz#1fec88b66570eaf0a5c5e89ec12371d80404862c"
-  integrity sha512-a6brB2b+YcR/p3UKnRUm1U3y87Js1zGFikMpjv1j+FtwH0GingmCs5J0mlu5+MTUthoTSa9wG7ZHB1JWhRDymA==
+appcenter-analytics@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.9.0.tgz#16c2a2a715a8d9316c07a5f357015eeff15af343"
+  integrity sha512-I9RF+VdeCAM4WqSLSu57YHrHNwtK0t6dFlsVcfnYKdLAcAhzgWsYd5WPlFelVcNfjhPbEUqt+YE6Sas1X189cg==
   dependencies:
-    appcenter "1.8.1"
+    appcenter "1.9.0"
 
-appcenter-crashes@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.8.1.tgz#8892641e2a906366a37a7794273448b13c4059f7"
-  integrity sha512-6u15W3LFqrISwGFCKoKdoc/2AVoMOefiFBYqrBLXxGqV1vKFA6wuEtblZ8I4vHjVXiTCV+4ExKo584hOU+loJA==
+appcenter-crashes@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.9.0.tgz#f1c14125c4a7c882cfd08e1381b6f78a54ea7386"
+  integrity sha512-FEh0MGOgmu0GVRYyV+dEthvEq/KT70Xltl02OhBU9pBlwfEmcEp9Ume5bjnTFwdWbS+9ogu0o1U7I/N5XHuRQg==
   dependencies:
-    appcenter "1.8.1"
+    appcenter "1.9.0"
 
-appcenter-link-scripts@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.8.1.tgz#03cbac52242c74b49e1a615e378b72e1553716ea"
-  integrity sha512-iFSIU1EwG/cbFSWcv2knJ9frqOOD4iG25KHNO5swsVYSGe2PTwsWuWPssKMDQgMMSvPV2i/SlTZQ3aHXB5drSA==
+appcenter-link-scripts@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.9.0.tgz#d8603e2943383bf76f585316e696328743284a67"
+  integrity sha512-R6UacmMhsLi9sn3Y1RjPyBfrkznI2KoNA/CgQ1A61dGxAMxMlKPShGXuG3C57UU8JvdJdo+KUE+dHbF6fAz27A==
   dependencies:
     debug "^2.2.0"
     glob "^5.0.15"
@@ -737,12 +737,12 @@ appcenter-link-scripts@1.8.1:
     which "^1.2.11"
     xcode "^1.0.0"
 
-appcenter@1.8.1, appcenter@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.8.1.tgz#e8c91937e1ada9690291b42bf6ebf7dba85f9fac"
-  integrity sha512-VT9u7vqBBPQJNLK4BIKHBpetcDtcjE02tzbqkTgaMvhDrSJZ3vXmNtJRuYsvhCp4xCw5tRXWUFgLMKRoWrFviQ==
+appcenter@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.9.0.tgz#00ee98256bf6167c62e1ed2c35a59b448affb963"
+  integrity sha512-QyTmKPjM5N2GfqP2ob1htUMWsIVln5ujhXNocr/t/N0u1zJWzaWmcY895AnvH5B7JR1D8pdt57aQKPwTRZeAHA==
   dependencies:
-    appcenter-link-scripts "1.8.1"
+    appcenter-link-scripts "1.9.0"
 
 append-transform@^1.0.0:
   version "1.0.0"
@@ -8492,10 +8492,10 @@ react-is@^16.3.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
   integrity sha512-xpb0PpALlFWNw/q13A+1aHeyJyLYCg0/cCHPUA43zYluZuIPHaHL3k8OBsTgQtxqW0FhyDEMvi8fZ/+7+r4OSQ==
 
-react-native-elements@1.0.0-beta6:
-  version "1.0.0-beta6"
-  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-1.0.0-beta6.tgz#d551ea1d862f30d6033a12718c12bac12d80156f"
-  integrity sha512-tkL+zGZa8tDMrz+btHbC4nIo9MXZAlqB3PlH17eAicnq+tsUEuRRGn1lHnTbkupm+7XxLfZiiHV09j4GWQJ74Q==
+react-native-elements@1.0.0-beta7:
+  version "1.0.0-beta7"
+  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-1.0.0-beta7.tgz#d732affc905079033a8b53343587f7c1dbc59834"
+  integrity sha512-w89YVfF7own1V3RgHDj6EAofk3mYdL9Z28OolxphFce2mv2k/peFEII7x0S6LyQ7rcT3QaxWDlyP7AS4d8duGg==
   dependencies:
     lodash.merge "^4.6.1"
     lodash.times "^4.3.2"
